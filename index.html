@@ -1,1 +1,137 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#242638">
+  <title>Untuk Nazira</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="langit" aria-hidden="true"></canvas>
 
+  <section class="sampul" id="sampul">
+    <div class="kartu kartu-sampul">
+      <p class="label">sebuah halaman kecil</p>
+      <h1>Untuk Nazira</h1>
+      <p>Ada cerita dan beberapa kenangan yang ingin kubagikan.</p>
+      <button class="tombol" id="tombol-masuk" type="button">Masuk 🌸</button>
+    </div>
+    <p class="catatan-sampul">dibuat dengan hangat, seperti sore yang tenang</p>
+  </section>
+
+  <div id="website" class="tersembunyi">
+    <div id="halaman-awal">
+      <header class="header">
+        <a class="merek" href="#atas">✿ Untuk Nazira</a>
+        <a href="#galeri">Lihat foto ↓</a>
+      </header>
+
+      <main id="atas">
+        <section class="panel pengantar">
+          <p class="label">sebuah catatan kecil</p>
+          <h2>Untuk kamu</h2>
+          <p>Ada beberapa hal yang ingin kusampaikan dengan sederhana.</p>
+          <button class="tombol" id="tombol-buka-surat" type="button">
+            💌 Surat untukmu
+          </button>
+        </section>
+
+        <section class="panel" id="galeri">
+          <p class="label">potongan kenangan</p>
+          <h2>Galeri kecil</h2>
+          <p>Beberapa momen yang ingin kusimpan.</p>
+
+          <div class="galeri">
+            <figure class="kartu-foto">
+              <div class="bingkai-foto">
+                <img src="foto-1.jpg" alt="Kenangan pertama">
+                <div class="placeholder-foto"><span>🌸</span><span>Tambahkan foto-1.jpg</span></div>
+              </div>
+              <figcaption>Momen pertama</figcaption>
+            </figure>
+
+            <figure class="kartu-foto">
+              <div class="bingkai-foto">
+                <img src="foto-2.jpg" alt="Kenangan kedua">
+                <div class="placeholder-foto"><span>☁️</span><span>Tambahkan foto-2.jpg</span></div>
+              </div>
+              <figcaption>Hari yang cerah</figcaption>
+            </figure>
+
+            <figure class="kartu-foto">
+              <div class="bingkai-foto">
+                <img src="foto-3.jpg" alt="Kenangan ketiga">
+                <div class="placeholder-foto"><span>🌙</span><span>Tambahkan foto-3.jpg</span></div>
+              </div>
+              <figcaption>Sore yang tenang</figcaption>
+            </figure>
+
+            <figure class="kartu-foto">
+              <div class="bingkai-foto">
+                <img src="foto-4.jpg" alt="Kenangan keempat">
+                <div class="placeholder-foto"><span>✨</span><span>Tambahkan foto-4.jpg</span></div>
+              </div>
+              <figcaption>Tawa kecil</figcaption>
+            </figure>
+
+            <figure class="kartu-foto">
+              <div class="bingkai-foto">
+                <img src="foto-5.jpg" alt="Kenangan kelima">
+                <div class="placeholder-foto"><span>🌷</span><span>Tambahkan foto-5.jpg</span></div>
+              </div>
+              <figcaption>Kenangan hangat</figcaption>
+            </figure>
+
+            <figure class="kartu-foto">
+              <div class="bingkai-foto">
+                <img src="foto-6.jpg" alt="Kenangan keenam">
+                <div class="placeholder-foto"><span>🍃</span><span>Tambahkan foto-6.jpg</span></div>
+              </div>
+              <figcaption>Hari sederhana</figcaption>
+            </figure>
+
+            <figure class="kartu-foto">
+              <div class="bingkai-foto">
+                <img src="foto-7.jpg" alt="Kenangan ketujuh">
+                <div class="placeholder-foto"><span>🌼</span><span>Tambahkan foto-7.jpg</span></div>
+              </div>
+              <figcaption>Hal kecil yang berkesan</figcaption>
+            </figure>
+
+            <figure class="kartu-foto">
+              <div class="bingkai-foto">
+                <img src="foto-8.jpg" alt="Kenangan kedelapan">
+                <div class="placeholder-foto"><span>🌌</span><span>Tambahkan foto-8.jpg</span></div>
+              </div>
+              <figcaption>Untuk dikenang</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <footer>Dibuat dengan hangat ♡</footer>
+      </main>
+    </div>
+
+    <section id="pembaca-surat" class="pembaca tersembunyi">
+      <article class="panel halaman-buku">
+        <p class="nomor-halaman" id="nomor-halaman"></p>
+        <div id="teks-halaman" aria-live="polite"></div>
+
+        <div class="kontrol-surat">
+          <button class="tombol tombol-kecil" id="tombol-sebelumnya" type="button">
+            ← Sebelumnya
+          </button>
+          <button class="tombol tombol-kecil" id="tombol-otomatis" type="button">
+            Jeda otomatis
+          </button>
+          <button class="tombol tombol-kecil" id="tombol-berikutnya" type="button">
+            Berikutnya →
+          </button>
+        </div>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
